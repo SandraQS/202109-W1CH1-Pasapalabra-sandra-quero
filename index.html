@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>EL ROSCO DE PASAPALABRA</h1>
+    </header>
+    <section>
+<!--REGLAS (MODAL)-->
+        <div id="reglasJuego">
+            <div>
+                <h2>¡Bienvenido al juego de Pasapalabra! <br>  A continuación verás las reglas del juego:</h2>
+                <ul>
+                    <li>Te haremos una pregunta por cada letra del abecedario.</li>
+                    <li>Cuentas con 200 segundos para responder todas las preguntas.</li>
+                    <li>Deberás responder escribiendo la respuesta que creas correcta y pulsando en el botón Aceptar o en la tecla Enter.</li>
+                    <li> Si no te sabes la respuesta, puedes dejar la casilla en blanco o escribir pasapalabra, y pulsar en el botón Aceptar o en la tecla Enter para pasar a la siguiente pregunta y poder contestarla en la siguiente ronda.</li>
+                    <li>Si quieres finalizar el juego, pulsa en el botón abandonar. En este caso, verás tu puntuación pero no podrás acceder al ranking.</li>
+                    <li>La partida finaliza cuando contestas todas las preguntas del rosco o finaliza el tiempo. Al final de la partida podrás ver tu puntuación y tu posición en el ranking de jugadores.</li>
+                </ul>
+                <h2>¿Preparado? En cuanto le des al botón, empezará el juego.   ¡Suerte!  </h2>
+
+                <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Esceibe tu nombre/alias" maxlength="10">
+                <button type="submit" id="jugar"> ¡Vamos a jugar!</button><br>
+                <label for="nombreUsuario">Escribe tu nomnbre/alias con un máximo de 10 carácteres.</label>   
+          </div>   
+        </div>
+<!-- FIN REGLAS (MODAL)-->
+
+<!--ZONA ROSCO, PREGUTNAS Y RESPUESTAS-->  
+        <div id="roscoPreguntas">
+    <!--ROSCO-->
+            <div id="rosco">
+                <h2 id="letrasRosco">abcdefghijklmnñopqrstuvwxyz</h2>
+                <div id="nombrejudagor"><h2>Sandra</h2></div>
+            </div>
+    <!--FIN ROSCO-->
+
+    <!--PREGUNTAS Y RESPUESTAS-->      
+            <div id="info">
+                <div id ="tarjetaInfo">
+        <!--PREGUNTAS-->
+                    <div id="espacioPregunta">
+                        <h2 id="correcta"></h2>
+                        <h2 id="letra"></h2>
+                        <p id="pregunta"></p>
+                    </div>
+        <!--FIN PREGUNTAS-->
+
+        <!--RESPUESTAS-->
+                    <div id="espacioRespuesta">
+                        <input type="text" id="respuesta" name="respuesta" autofocus placeholder="Escribe tu respuesta" >
+                        <button id="aceptar" type="submit">Aceptar</button> <button id="abandonar" type="button">Abandonar</button>
+                    </div> 
+        <!--FIN RESPUESTAS-->  
+                </div>        
+            </div>
+        <!--FIN PREGUNTAS Y RESPUESTAS-->  
+        </div>
+<!--ZONA ROSCO, PREGUTNAS Y RESPUESTAS-->  
+
+<!--TIEMPO Y ACIERTOS-->  
+        <div id="infoJugador">
+           <div id="tiempo"><h3></h3></div>
+           <div id="aciertos"><h3></h3></div> 
+        </div>
+<!--TIEMPO Y ACIERTOS-->  
+    </section>
+    <footer><h5>Sandra Quero Sánchez - Pasapalabra-html/css/js</h5></footer>
+
+    
+</body>
+</html>

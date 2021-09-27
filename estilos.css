@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*REGLAS DEL JUEGO*/
+
+#reglasJuego{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 140vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -18vw;
+}
+
+#reglasJuego div{
+    
+    border: 1px solid white;
+    padding: 3vw;
+    height: auto;
+    width: 60%;
+}
+#reglasJuego ul li, #reglasJuego p, #reglasJuego ol li, label  {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.3vw;
+    line-height: 1.8vw;
+    font-weight: lighter;
+}
+label{
+    font-size: 1vw;
+}
+#reglasJuego ul, #reglasJuego p, #reglasJuego ol{
+    margin: 2vw 0 2vw;
+}
+#jugar, #volverAjugar{
+    background-color: transparent;
+    border:2px solid #890359;
+    
+}
+
+#jugar:hover, #volverAjugar:hover{
+    background-color: #89035aa9;
+    border:2px solid transparent;
+    border-left: 4px solid #890359;
+}
+
+/*FIN REGLAS DEL JUEGO*/
+
+h1, h2, h3, button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+body{
+    background-image: url("media/fondopasapalabra.jpg");
+    opacity: 70%;
+    background-color: black;
+}
+
+header{
+    width: 30vw;
+    height: auto;
+    border: 2px solid white;
+    text-align: center;
+    padding: 15px 0 15px;
+    margin:0 auto;
+    margin-top: 30px;
+    font-size: 1.3vw;
+}
+
+#roscoPreguntas, #infoJugador{
+    height: 45vw;
+    display: flex;
+}
+
+#rosco{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    padding: 2vw;
+}
+
+#nombrejudagor{
+    text-align: center;
+    font-size: 2vw;
+    justify-content: center;
+    align-self: center;
+    margin-top: -3vw;
+    margin-left: -1.5vw;
+}
+
+#info{
+    width: 50vw;
+    height: auto;
+    padding: 2vw;
+    align-self: center;
+}
+
+#tarjetaInfo{
+    border-top: 6px solid #890359;
+    background-color: rgba(0, 0, 0, 0.767);
+    width: 40vw;
+    height: auto;
+    padding: 2vw;
+}
+
+#espacioPregunta{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.3vw;
+    font-weight: lighter;
+    line-height: 1.7vw;
+}
+
+#letra{
+    margin-bottom: 3%;
+}
+
+#letrasRosco div{
+    position: absolute;
+    height: 19vw;
+    transform-origin: bottom center;
+}
+
+#letrasRosco h2{
+    background-color: rgba(0, 0, 0, 0.767);
+    border: 2px solid white;
+    width: 2vw;
+    height: 2vw; 
+    padding: 1vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+#correcta{
+    margin-bottom: 1vw;
+    padding: 1vw;
+}
+
+button, #respuesta, #nombreUsuario{
+    border: 0;
+    border-radius: 0;
+    padding: 3%;
+    margin: 10% 0.3% 0 0;
+    font-size: 1.2vw;
+}
+button {
+    text-transform: uppercase;
+}
+#aceptar{
+    background-color: #005c6b;
+}
+
+#abandonar{
+    background-color: #890359;
+}
+#respuesta{
+    font-family: Helvetica, sans-serif;
+}
+
+#infoJugador{
+    padding-left: 5vw;
+    align-items: center;
+    height: 5vw;
+    margin-top: -6vw;
+}
+#tiempo, #aciertos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    margin: -0.5vw;
+}
+#tiempo{
+    background-color: #890359;
+    width: 5vw;
+    height: 5vw; 
+    padding: 1vh;
+    font-size: 1.5vw;
+}
+
+#aciertos{
+    background-color: #005c6b;
+    width: 2vw;
+    height: 2vw; 
+    padding: 1vh;
+    font-size: 1vw;
+}
+
+footer{
+    margin: 0 auto;
+    height: auto;
+    width: 25vw;
+    margin-top: 3vw;
+    padding: 0.5vw;
+    border: 1px solid white;
+}
+footer h5{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    
+}
